@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('SCM checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Devops-SDA/htmlfiles.git'
+            }
+        }
+        stage('archiving artifacts') {
+            steps {
+                archiveArtifacts '**/*.*'
+            }
+        }
+        stage('Deployment') {
+            steps {
+                sshPublisher(publishers: [sshPublisherDesc(configName: 'webserver', transfers: [sshTransfer(excludes: '', execCommand: '', execTimeout: 120000, flatten: true, makeEmptyDirs: false, noDefaultExcludes: false, patternSeperator: '[, ]+', remoteDirectory: 'www/html', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '**/*.*')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true)])
+            }
+        }
+    }
+}
