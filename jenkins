@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('SCM checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Devops-SDA/htmlfiles.git'
+                git branch: 'main', url: 'https://github.com/pavanithota786/test9.git'
             }
         }
         stage('archiving artifacts') {
@@ -17,4 +17,5 @@ pipeline {
             }
         }
     }
+
 }
