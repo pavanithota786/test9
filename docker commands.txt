@@ -1,0 +1,123 @@
+yum install docker
+    3  systemctl enable docker				(12.11.2025)
+    4  systemctl start docker
+    5  systemctl status docker
+    6  docker pull httpd
+    7  docker pull ubuntu
+    8  docker ps
+    9  docker images
+   10  docker ps-a
+   11  docker ps -a
+   12  docker run -dit --name test_container ubuntu
+   13  docker ps
+   14  docker rm 9970171c257d
+   15  docker stop 9970171c257d
+   16  docker rm 9970171c257d
+   17  docker ps
+   18  docker run -dit --test_container -p 80:80
+   19  docker run -dit --test_container -p 80:80 httpd
+   20  docker run -dit --name test_container _p 80:80 httpd
+   21  docker run -dit --name test_container -p 80:80 httpd
+   22  docker run -dit --name  test2 ubuntu
+   23  docker ps
+   24  docker exec -it c138ebb2f800 /bin/bash
+   25  docker stop c138ebb2f800
+   26  docker rm c138ebb2f800
+   27  docker stop 6f1f69372754
+   28  docker rm 6f1f69372754
+   29  history
+
+							(13.11.2025)
+ docker ps
+   24  docker exec -it c138ebb2f800 /bin/bash
+   25  docker stop c138ebb2f800
+   26  docker rm c138ebb2f800
+   27  docker stop 6f1f69372754
+   28  docker rm 6f1f69372754
+   29  cat /var/jenkins_home/secrets/initialAdminPassword
+   30  docker exec -it
+   31  docker exec -it c72726a054aa
+   32  docker exec -it c72726a054aa /bin/bash/
+   33  cat /var/jenkins_home/secrets/initialAdminPassword
+   34  cat /var/jenkins_home/secrets/initialAdminPassword
+   35  cat /var/jenkins_home/secrets/initialAdminPassword
+   36  docker ps
+   37  docker exec -it c72726a054aa /bin/bash
+   38  history
+   39  docker ps
+   40  docker ps -a
+   41  docker images
+   42  clear
+   43  docker pull jenkins/jenkins
+   44  docker images
+   45  docker run -dit --name jenkins_cn -p 8080:8080 jenkins/jenkins
+   46  docker ps
+   47  docker exec c72726a054aa /bin/bash
+   48  history
+						(14.11.2025)
+ cat jenkins
+   50  cd jenkins
+   51  clear
+   52  vi>Dockerfile
+   53  vi Dockerfile
+   54  vi /etc/ssh/sshd
+   55  vi Dockerfile
+   56  vi Dockerfile
+   57  docker stop c72726a054aa
+   58  docker rm c72726a054aa
+   59  docker -ps -a
+   60  docker ps -a
+   61  dockrr images
+   62  docker images
+   63  vi Dockerfile
+   64  cd test6
+   65  vi Dockerfile
+   66  ll
+   67  chmod 755 Dockerfile
+   68  ll
+   69  docker build -t web .
+   70  docker run -dit --name webcn -p 80:80 web
+   71  docker ps
+   72  vi Dockerfile
+   73  cat index.html
+   74  docker images
+   75  docker ps
+   76  yum install git
+   77  git --version
+   78  docker build -t webserver -testimage .
+   79  clear
+   80  docker images
+   81  git clone https://github.com/pavanithota786/test6.git
+   82  cd test6
+   83  ll
+   84  vi Dockerfile
+   85  cd test6
+   86  vi Dockerfile
+   87  gitclone test6
+   88  git --version
+   89  git clone https://github.com/pavanithota786/test6.git
+   90  cd test6
+   91  ll
+   92  vi Dockerfile
+   93  docker build -t webserver_image .
+   94  vi Dockerfile
+   95  docker build -t webserver_image .
+   96  vi Dockerfile
+   97  docker build -t webserver_image .
+   98  docker images
+   99  docker run -dit --name webserver_container -p 80:80
+  100  docker run -dit --name webserver_container -p 80:80 webserver_image
+  101  docker ps
+  102  docker stop webserver_container
+  103  docker rm webserver_container
+  104  dpcker ps -a
+  105  docker ps -a
+  106  docker stop c72726a054aa
+  107  cd test6
+  108  docker run -dit --name webcn1 -p 1234:80 web
+  109  docker ps
+  110  history
+
+
+
+							(13.11.2025)
